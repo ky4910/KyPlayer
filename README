@@ -1,0 +1,6 @@
+FFMPEG 	version 	3.2
+SDL		version 	2.0.4
+
+FFMPEG v3 	use pFormatCtx->streams[x]->codecpar 			deprecate 	pFormatCtx->streams[x]->codec
+			use avcodec_send_packet+avcodec_receive_frame 	deprecate 	avcodec_decode_video2
+			use av_packet_unref								deprecate	av_free_packet
